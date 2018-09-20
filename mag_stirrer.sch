@@ -1,0 +1,314 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:mag_stirrer-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NE555 U1
+U 1 1 59A69A61
+P 5450 3950
+F 0 "U1" H 5050 4300 50  0000 L CNN
+F 1 "NE555D" H 5050 3600 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5450 3950 50  0001 C CNN
+F 3 "" H 5450 3950 50  0001 C CNN
+	1    5450 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 59A69AC2
+P 6050 4750
+F 0 "RV1" V 6150 4850 50  0000 C CNN
+F 1 "15k" V 6150 4600 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_WirePads_Small" H 6050 4750 50  0001 C CNN
+F 3 "" H 6050 4750 50  0001 C CNN
+	1    6050 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 59A69B5B
+P 6400 3500
+F 0 "R2" V 6480 3500 50  0000 C CNN
+F 1 "10k" V 6400 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6330 3500 50  0001 C CNN
+F 3 "" H 6400 3500 50  0001 C CNN
+	1    6400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D4
+U 1 1 59A69CAF
+P 6850 3500
+F 0 "D4" H 6850 3600 50  0000 C CNN
+F 1 "LL4148" H 6850 3400 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 6850 3500 50  0001 C CNN
+F 3 "" H 6850 3500 50  0001 C CNN
+	1    6850 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 59A69E55
+P 4700 5050
+F 0 "C3" V 4600 5150 50  0000 L CNN
+F 1 "100n" V 4850 4900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 4900 50  0001 C CNN
+F 3 "" H 4700 5050 50  0001 C CNN
+	1    4700 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 59A69F07
+P 4400 5050
+F 0 "C2" V 4550 4900 50  0000 L CNN
+F 1 "10n" V 4550 5050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4438 4900 50  0001 C CNN
+F 3 "" H 4400 5050 50  0001 C CNN
+	1    4400 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C1
+U 1 1 59A6A163
+P 3750 4250
+F 0 "C1" H 3550 4350 50  0000 L CNN
+F 1 "100u" H 3550 4150 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 3788 4100 50  0001 C CNN
+F 3 "" H 3750 4250 50  0001 C CNN
+	1    3750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59A6A9F7
+P 4050 3700
+F 0 "R1" H 3950 3700 50  0000 C CNN
+F 1 "150R" V 4050 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3980 3700 50  0001 C CNN
+F 3 "" H 4050 3700 50  0001 C CNN
+	1    4050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 59A6AA9C
+P 4050 4250
+F 0 "D1" V 4050 4350 50  0000 C CNN
+F 1 "LED" H 4050 4150 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 4050 4250 50  0001 C CNN
+F 3 "" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X02 J2
+U 1 1 59A6A732
+P 7500 3450
+F 0 "J2" H 7500 3600 50  0000 C CNN
+F 1 "motor" V 7600 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 7500 3450 50  0001 C CNN
+F 3 "" H 7500 3450 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3950 5950 3950
+Wire Wire Line
+	6400 3350 6400 3200
+Wire Wire Line
+	3450 3200 7300 3200
+Wire Wire Line
+	6850 3200 6850 3350
+Wire Wire Line
+	7300 3200 7300 3400
+Connection ~ 6850 3200
+Wire Wire Line
+	6850 3650 6850 3750
+Wire Wire Line
+	6400 3650 6400 3950
+Connection ~ 6400 3950
+Wire Wire Line
+	5950 3750 6200 3750
+Wire Wire Line
+	6200 3750 6200 4750
+$Comp
+L D D2
+U 1 1 59A6BF9C
+P 5850 4600
+F 0 "D2" H 5850 4700 50  0000 C CNN
+F 1 "LL4148" H 5850 4500 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 5850 4600 50  0001 C CNN
+F 3 "" H 5850 4600 50  0001 C CNN
+	1    5850 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L D D3
+U 1 1 59A6BFA2
+P 5850 4900
+F 0 "D3" H 5850 5000 50  0000 C CNN
+F 1 "LL4148" H 5850 4800 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 5850 4900 50  0001 C CNN
+F 3 "" H 5850 4900 50  0001 C CNN
+	1    5850 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4600 6050 4600
+Wire Wire Line
+	6000 4900 6050 4900
+Wire Wire Line
+	5700 4350 5700 4900
+Wire Wire Line
+	5700 4750 4400 4750
+Connection ~ 5700 4750
+Wire Wire Line
+	4400 3750 4950 3750
+Connection ~ 4400 4750
+Wire Wire Line
+	4950 3950 4700 3950
+Wire Wire Line
+	4400 3750 4400 4900
+Wire Wire Line
+	4700 3950 4700 4900
+Wire Wire Line
+	4850 4150 4950 4150
+Wire Wire Line
+	4850 3450 4850 4150
+Wire Wire Line
+	5950 4150 5950 4350
+Wire Wire Line
+	5950 4350 5700 4350
+Connection ~ 5700 4600
+Wire Wire Line
+	4850 3450 5450 3450
+Wire Wire Line
+	5450 3200 5450 3550
+Connection ~ 6400 3200
+Connection ~ 5450 3200
+Connection ~ 5450 3450
+Wire Wire Line
+	4050 3550 4050 3200
+Connection ~ 4050 3200
+Wire Wire Line
+	3750 4100 3750 3200
+Connection ~ 3750 3200
+Wire Wire Line
+	4050 4100 4050 3850
+Wire Wire Line
+	3750 4400 3750 5350
+Connection ~ 4400 5350
+Wire Wire Line
+	6850 5350 6850 4150
+Connection ~ 4700 5350
+Wire Wire Line
+	5450 5350 5450 4350
+Connection ~ 5450 5350
+Connection ~ 3750 5350
+Wire Wire Line
+	6850 3750 7300 3750
+Wire Wire Line
+	7300 3750 7300 3500
+Wire Wire Line
+	4050 5350 4050 4400
+Connection ~ 4050 5350
+Wire Wire Line
+	4700 5350 4700 5200
+Wire Wire Line
+	4400 5350 4400 5200
+$Comp
+L SW_SPST SW1
+U 1 1 59A6D772
+P 3450 3750
+F 0 "SW1" H 3450 3875 50  0000 C CNN
+F 1 "SW_SPST" H 3450 3650 50  0000 C CNN
+F 2 "Connectors:PINHEAD1-2" H 3450 3750 50  0001 C CNN
+F 3 "" H 3450 3750 50  0001 C CNN
+	1    3450 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 3550 3450 3200
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 59A6DCA4
+P 3450 3200
+F 0 "#FLG01" H 3450 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 3350 50  0000 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_GDS Q1
+U 1 1 59A6DFD2
+P 6750 3950
+F 0 "Q1" H 6950 4000 50  0000 L CNN
+F 1 "IRF510" H 6950 3900 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 6950 4050 50  0001 C CNN
+F 3 "" H 6750 3950 50  0001 C CNN
+	1    6750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J1
+U 1 1 59AD4E6C
+P 3250 4250
+F 0 "J1" H 3250 4400 50  0000 C CNN
+F 1 "power" V 3350 4250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.00mm" H 3250 4250 50  0001 C CNN
+F 3 "" H 3250 4250 50  0001 C CNN
+	1    3250 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 4200 3450 3950
+Wire Wire Line
+	3450 4300 3450 5350
+Wire Wire Line
+	3450 5350 6850 5350
+$EndSCHEMATC
