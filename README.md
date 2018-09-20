@@ -1,0 +1,2 @@
+# diyMagneticStirrer
+Simple magnetic stirrer.
