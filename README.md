@@ -1,2 +1,2 @@
 # diyMagneticStirrer
-Simple magnetic stirrer.
+Simple laboratory magnetic stirrer.
